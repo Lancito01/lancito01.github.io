@@ -1,23 +1,56 @@
+html {
+    margin: 40px;
+}
 * {
     font-family: Consolas, monospace;
+    background-color: rgb(24, 26, 27);
+    color: white
+}
+a {
+    color: rgb(44, 169, 231)
 }
 body h1 {
     /* text-align: center; */
     font-size: 50px;
-    color: #000000;
 }
+
+body h2 {
+    /* text-align: center; */
+    font-size: 30px;
+}
+
 body h3 {
     /* text-align: center; */
     font-size: 20px;
-    color: #000000;
 }
-body div {
-    /* text-align: center; */
-    font-size: 15px;
-    color: #000000;
-}
+
 body p {
     text-align: left;
     font-size: 15px;
-    color: #000000;
+}
+
+body div {
+    height: fit-content;
+}
+
+body .socials div {
+    padding-top: 10px;
+}
+
+.discord-logo {
+    max-height: 20px;
+    width: auto
+}
+
+.twitter-logo {
+    max-height: 20px;
+    width: auto
+}
+
+.github-logo {
+    max-height: 30px;
+    width: auto
+}
+.projects {
+    margin-left: 2vw;
 }
