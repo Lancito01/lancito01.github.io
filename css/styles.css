@@ -1,30 +1,46 @@
 html {
     margin: 40px;
 }
+
 * {
     font-family: Consolas, monospace;
     background-color: rgb(24, 26, 27);
     color: white
 }
+
 a {
     color: rgb(44, 169, 231)
 }
+
 body h1 {
     /* text-align: center; */
     font-size: 50px;
 }
+
 .bio {
     margin-left: 2vw;
     width: 65vw;
 }
+
 body h2 {
     /* text-align: center; */
     font-size: 30px;
 }
 
-body h3 {
-    /* text-align: center; */
-    font-size: 20px;
+.stand-section h3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.stand-section p {
+    margin-left: 2vw
+}
+
+.stand-section img {
+    max-width: 30px;
+    padding-right: 0.4vw;
 }
 
 body p {
@@ -38,6 +54,13 @@ body div {
 
 body .socials div {
     padding-top: 10px;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
 }
 
 .discord-logo {
@@ -54,6 +77,7 @@ body .socials div {
     max-height: 30px;
     width: auto
 }
+
 .projects {
     margin-left: 2vw;
 }
