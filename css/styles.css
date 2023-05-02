@@ -13,7 +13,10 @@ body h1 {
     /* text-align: center; */
     font-size: 50px;
 }
-
+.bio {
+    margin-left: 2vw;
+    width: 65vw;
+}
 body h2 {
     /* text-align: center; */
     font-size: 30px;
