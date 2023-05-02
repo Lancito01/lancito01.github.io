@@ -2,17 +2,17 @@
     font-family: Consolas, monospace;
 }
 body h1 {
-    text-align: center;
+    /* text-align: center; */
     font-size: 50px;
     color: #000000;
 }
 body h3 {
-    text-align: center;
+    /* text-align: center; */
     font-size: 20px;
     color: #000000;
 }
 body div {
-    text-align: center;
+    /* text-align: center; */
     font-size: 15px;
     color: #000000;
 }
