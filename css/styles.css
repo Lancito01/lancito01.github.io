@@ -3,7 +3,7 @@ html {
 }
 
 * {
-    font-family: Consolas, monospace;
+    font-family: monospace;
     background-color: rgb(24, 26, 27);
     color: white
 }
@@ -18,8 +18,9 @@ body h1 {
 }
 
 .bio {
+    text-align: justify;
     margin-left: 2vw;
-    width: 65vw;
+    width: 85vw;
 }
 
 body h2 {
@@ -43,6 +44,10 @@ body h2 {
     padding-right: 0.4vw;
 }
 
+.programming-languages {
+    margin-left: 2vw;
+}
+
 body p {
     text-align: left;
     font-size: 15px;
@@ -60,7 +65,10 @@ body .socials div {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+}
 
+.socials div{
+    margin-left: 2vw;
 }
 
 .discord-logo {
@@ -80,4 +88,11 @@ body .socials div {
 
 .projects {
     margin-left: 2vw;
+}
+
+.poem{
+    margin-top: 80px;
+    font-style: italic;
+    text-align: justify;
+    text-align-last: center;
 }
