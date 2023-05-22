@@ -1,11 +1,31 @@
 html {
     margin: 2vw;
-}
-
-* {
     font-family: monospace;
     background-color: rgb(20, 20, 20);
     color: white
+}
+
+.light-mode {
+    transition: background-color 0.5s, color 0.5s;
+    background-color: white;
+    color: black;
+}
+
+.dark-mode {
+    transition: background-color 0.5s, color 0.5s;
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+
+.mode-toggle-button {
+    scale: 1.1;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: cyan;
+    color: black;
+    position: fixed;
+    right: 2vw;
+    margin: 1vw;
 }
 
 .margin {
@@ -16,8 +36,9 @@ a {
     color: rgb(44, 169, 231)
 }
 
-.color-cyan {
-    color:cyan
+.arrow-color {
+    color: cyan
+        /*? initial value */
 }
 
 body h1 {
@@ -80,7 +101,7 @@ body .socials div {
     width: auto
 }
 
-.poem{
+.poem {
     margin-top: 80px;
     font-style: italic;
     text-align-last: center;
