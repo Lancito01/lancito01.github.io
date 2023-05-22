@@ -1,9 +1,12 @@
 html {
-    font-family: monospace;
     background-color: rgb(20, 20, 20);
     color: white;
 
     margin-bottom: 5vh;
+}
+
+*{
+    font-family: monospace;
 }
 
 .light-mode {
