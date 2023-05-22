@@ -1,14 +1,6 @@
 let ModeStatus = "dark"
 let HtmlElement = document.documentElement;
 
-function changeElementsColor(elements, color) {
-
-    for (let index = 0; index < elements.length; index++) {
-        elements[index].style.color = color
-    }
-
-}
-
 function toggleDarkLightMode(status) {
     if (status === "dark") {
         HtmlElement.classList.remove("light-mode")
@@ -30,17 +22,34 @@ function darkModeFunction() {
 
     let arrows = document.querySelectorAll(".arrow-color")
     let button = document.querySelector(".mode-toggle-button")
+    let nav = document.querySelector("nav")
+    nav.style.transition = "0.5s"
 
     if (ModeStatus === "dark") { // toggled dark mode
         toggleDarkLightMode(ModeStatus)
-        changeElementsColor(arrows, "cyan")
+
+        for (let index = 0; index < arrows.length; index++) {
+            arrows[index].style.color = "cyan"
+        }
+
+        nav.style.backgroundColor = "#141414"
+        nav.style.color = "white"
+        nav.style.borderBottom = "1px solid white"
+
         button.style.backgroundColor = "cyan"
         button.style.color = "black"
     }
     else if (ModeStatus === "light") { // toggled light mode
-
         toggleDarkLightMode(ModeStatus)
-        changeElementsColor(arrows, "red")
+
+        for (let index = 0; index < arrows.length; index++) {
+            arrows[index].style.color = "red"
+        }
+
+        nav.style.backgroundColor = "white"
+        nav.style.color = "black"
+        nav.style.borderBottom = "1px solid black"
+
         button.style.backgroundColor = "red"
         button.style.color = "black"
     }

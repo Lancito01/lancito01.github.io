@@ -1,8 +1,9 @@
 html {
-    margin: 2vw;
     font-family: monospace;
     background-color: rgb(20, 20, 20);
-    color: white
+    color: white;
+
+    margin-bottom: 5vh;
 }
 
 .light-mode {
@@ -17,13 +18,31 @@ html {
     color: white;
 }
 
+nav {
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    /*? initial values */
+    transition: 0.5s;
+    border-bottom: 1px solid white;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    /*? initial values */
+}
+
 .mode-toggle-button {
-    scale: 1.1;
+    scale: 1;
     padding: 10px;
     border-radius: 20px;
     background-color: cyan;
     color: black;
-    position: fixed;
     right: 2vw;
     margin: 1vw;
 }
@@ -37,12 +56,12 @@ a {
 }
 
 .arrow-color {
+    /*? initial value */
     color: cyan
-        /*? initial value */
+    /*? initial value */
 }
 
 body h1 {
-    /* text-align: center; */
     font-size: 50px;
 }
 
@@ -52,7 +71,6 @@ body h1 {
 }
 
 body h2 {
-    /* text-align: center; */
     font-size: 30px;
 }
 
