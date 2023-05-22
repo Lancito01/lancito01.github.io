@@ -1,6 +1,17 @@
 let ModeStatus = "dark"
 let HtmlElement = document.documentElement;
 
+// age calculator 1073530800
+document.addEventListener("DOMContentLoaded", function () {
+    let result = Math.floor((Date.now() / 1000 - 1073530800) / 31536000)
+    let ageSpan = document.querySelector(".age");
+    if (ageSpan) {
+        ageSpan.textContent = result.toString();
+    } else {
+        console.error("Could not find span element with class 'age'");
+    }
+});
+
 function toggleDarkLightMode(status) {
     if (status === "dark") {
         HtmlElement.classList.remove("light-mode")
