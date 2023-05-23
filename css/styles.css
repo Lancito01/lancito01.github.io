@@ -1,24 +1,26 @@
 html {
-    background-color: rgb(20, 20, 20);
-    color: white;
-
     margin-bottom: 5vh;
-}
-
-*{
     font-family: monospace;
 }
 
-.light-mode {
-    transition: background-color 0.5s, color 0.5s;
+* {
+    transition: all 0.5s ease;
+}
+
+.light-mode * {
+    transition-duration: 0.5s;
     background-color: white;
     color: black;
 }
 
-.dark-mode {
-    transition: background-color 0.5s, color 0.5s;
+.dark-mode * {
+    transition-duration: 0.5s;
     background-color: rgb(20, 20, 20);
     color: white;
+}
+
+.space-on-top {
+    padding-top: 2.5vh;
 }
 
 nav {
@@ -33,19 +35,16 @@ nav {
     align-items: center;
 
     /*? initial values */
-    transition: 0.5s;
-    border-bottom: 1px solid white;
-    background-color: rgb(20, 20, 20);
-    color: white;
-    /*? initial values */
+    border-bottom: 1px solid cyan;
 }
 
 .mode-toggle-button {
     scale: 1;
     padding: 10px;
-    border-radius: 20px;
-    background-color: cyan;
-    color: black;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: #1461ff;
+    color: white;
     right: 2vw;
     margin: 1vw;
 }
@@ -55,13 +54,12 @@ nav {
 }
 
 a {
-    color: rgb(44, 169, 231)
+    color: #257afb
 }
 
-.arrow-color {
+.accent-color {
     /*? initial value */
     color: cyan
-    /*? initial value */
 }
 
 body h1 {
@@ -69,7 +67,7 @@ body h1 {
 }
 
 .bio {
-    text-align: justify;
+    /* text-align: justify; */
     width: 85vw;
 }
 
@@ -86,7 +84,7 @@ body h2 {
 
 .stand-section img {
     max-width: 30px;
-    padding-right: 0.4vw;
+    padding-right: 10px;
 }
 
 body p {
@@ -94,17 +92,34 @@ body p {
     font-size: 15px;
 }
 
+.programming-languages {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.github-projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 body div {
     height: fit-content;
 }
 
-body .socials div {
-    padding-top: 10px;
+.socials div {
+    display: inherit;
+    /* (flex) */
+    align-items: center;
+}
+
+.socials a {
+    padding: 10px;
 }
 
 .socials {
-    display: block;
-    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
 }
 
 .discord-logo {
