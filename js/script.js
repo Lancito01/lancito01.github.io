@@ -1,18 +1,28 @@
-let ModeStatus = "dark"
-let HtmlElement = document.documentElement
-let AccentColorDark = "cyan", AccentColorLight = "red"
+let ModeStatus = "dark", HtmlElement = document.documentElement, AccentColorDark = "cyan", AccentColorLight = "red"
 
 function toggleDarkLightMode() {
+    
+    spanGradientObj = document.querySelector(".gradient-span")
     switch (ModeStatus) {
         case "dark":
             HtmlElement.classList.remove("light-mode")
             HtmlElement.classList.add("dark-mode")
+
             document.querySelector(".mode-toggle-button").textContent = "Toggle Dark Mode"
+
+            spanGradientObj.classList.remove("gradient-light-mode")
+            spanGradientObj.classList.add("gradient-dark-mode")
+
             break
         case "light":
             HtmlElement.classList.remove("dark-mode")
             HtmlElement.classList.add("light-mode")
+
             document.querySelector(".mode-toggle-button").textContent = "Toggle Light Mode"
+
+            spanGradientObj.classList.remove("gradient-dark-mode")
+            spanGradientObj.classList.add("gradient-light-mode")
+
             break
         default:
             break

@@ -19,6 +19,22 @@ html {
     color: white;
 }
 
+.gradient-dark-mode {
+    background: linear-gradient(to right, #1461FF, #00FFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.gradient-light-mode {
+    background: linear-gradient(to right, #FFA34B, #FF0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
 .space-on-top {
     padding-top: 2.5vh;
 }
@@ -83,7 +99,7 @@ body h2 {
 }
 
 .stand-section img {
-    max-width: 30px;
+    max-width: 27.5px;
     padding-right: 10px;
 }
 
