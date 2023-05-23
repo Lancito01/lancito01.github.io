@@ -2,26 +2,17 @@ let ModeStatus = "dark"
 let HtmlElement = document.documentElement
 let AccentColorDark = "cyan", AccentColorLight = "red"
 
-// age calculator 1073530800
-document.addEventListener("DOMContentLoaded", function () {
-    let result = Math.floor((Date.now() / 1000 - 1073530800) / 31536000)
-    let ageSpan = document.querySelector(".age")
-    if (ageSpan) {
-        ageSpan.textContent = result.toString()
-    } else {
-        console.error("Could not find span element with class 'age'")
-    }
-})
-
-function toggleDarkLightMode(status) {
-    switch (status) {
+function toggleDarkLightMode() {
+    switch (ModeStatus) {
         case "dark":
             HtmlElement.classList.remove("light-mode")
             HtmlElement.classList.add("dark-mode")
+            document.querySelector(".mode-toggle-button").textContent = "Toggle Dark Mode"
             break
         case "light":
             HtmlElement.classList.remove("dark-mode")
             HtmlElement.classList.add("light-mode")
+            document.querySelector(".mode-toggle-button").textContent = "Toggle Light Mode"
             break
         default:
             break
@@ -46,7 +37,7 @@ function darkModeFunction() {
 
     switch (ModeStatus) {
         case "dark":
-            toggleDarkLightMode(ModeStatus)
+            toggleDarkLightMode()
 
             for (let index = 0; index < accentColorElements.length; index++) {
                 accentColorElements[index].style.color = "cyan"
@@ -60,7 +51,7 @@ function darkModeFunction() {
             button.style.color = "white"
             break
         case "light":
-            toggleDarkLightMode(ModeStatus)
+            toggleDarkLightMode()
 
             for (let index = 0; index < accentColorElements.length; index++) {
                 accentColorElements[index].style.color = "red"
@@ -77,3 +68,17 @@ function darkModeFunction() {
             break
     }
 }
+
+
+// age calculator 1073530800
+document.addEventListener("DOMContentLoaded", function () {
+    toggleDarkLightMode()
+
+    let result = Math.floor((Date.now() / 1000 - 1073530800) / 31536000)
+    let ageSpan = document.querySelector(".age")
+    if (ageSpan) {
+        ageSpan.textContent = result.toString()
+    } else {
+        console.error("Could not find span element with class 'age'")
+    }
+})
