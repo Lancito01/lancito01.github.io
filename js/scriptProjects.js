@@ -1,5 +1,9 @@
 let ModeStatus = "dark", HtmlElement = document.documentElement, AccentColorDark = "cyan", AccentColorLight = "red"
 
+function backToProjects(){
+    window.location.href = "../projects.html"
+}
+
 function toggleDarkLightMode() {
     
     spanGradientObj = document.querySelector(".gradient-span")
@@ -27,10 +31,6 @@ function toggleDarkLightMode() {
         default:
             break
     }
-}
-
-function openProjects(){
-    window.location.href = "./projects.html"
 }
 
 function darkModeFunction() {
@@ -63,6 +63,10 @@ function darkModeFunction() {
 
             button.style.backgroundColor = "#1461ff"
             button.style.color = "white"
+
+            document.querySelector(".back-button").style.color = "white"
+            document.querySelector(".back-button").style.backgroundColor = "#1461ff"
+
             break
         case "light":
             toggleDarkLightMode()
@@ -77,22 +81,18 @@ function darkModeFunction() {
 
             button.style.backgroundColor = "#ffa34b"
             button.style.color = "black"
+
+            document.querySelector(".back-button").style.color = "black"
+            document.querySelector(".back-button").style.backgroundColor = "#ffa34b"
+
             break
         default:
             break
     }
 }
 
-
-// age calculator 1073530800
 document.addEventListener("DOMContentLoaded", function () {
     toggleDarkLightMode()
 
-    let result = Math.floor((Date.now() / 1000 - 1073530800) / 31536000)
-    let ageSpan = document.querySelector(".age")
-    if (ageSpan) {
-        ageSpan.textContent = result.toString()
-    } else {
-        console.error("Could not find span element with class 'age'")
-    }
+
 })

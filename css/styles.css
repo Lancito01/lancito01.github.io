@@ -8,13 +8,13 @@ html {
 }
 
 .light-mode * {
-    transition-duration: 0.5s;
+    transition-property: background-color, color;
     background-color: white;
     color: black;
 }
 
 .dark-mode * {
-    transition-duration: 0.5s;
+    transition-property: background-color, color;
     background-color: rgb(20, 20, 20);
     color: white;
 }
@@ -65,8 +65,44 @@ nav {
     margin: 1vw;
 }
 
+.back-button {
+    scale: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: #1461ff;
+    color: white;
+    right: 2vw;
+    margin: 1vw;
+}
+
+.back-button:hover {
+    cursor: pointer;
+}
+
+.projects-link {
+    font-size: x-large;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #257afb
+}
+
+.projects-link:hover {
+    cursor: pointer;
+}
+
+.mode-toggle-button:hover,
+.projects-button:hover {
+    cursor: pointer;
+}
+
 .margin {
     margin-left: 2vw;
+}
+
+.description {
+    margin-top: 0px;
+    font-size: small;
 }
 
 a {
@@ -87,8 +123,16 @@ body h1 {
     width: 85vw;
 }
 
-body h2 {
+h2 {
     font-size: 30px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.no-bottom-margin {
+    margin-bottom: 0px;
 }
 
 .stand-section h3 {
