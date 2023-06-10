@@ -33,11 +33,11 @@ html {
     background-clip: text;
 }
 
-#noBottomMargin{
+#noBottomMargin {
     margin-bottom: 0px;
 }
 
-#githubProjectsList{
+#githubProjectsList {
     display: flex;
 }
 
