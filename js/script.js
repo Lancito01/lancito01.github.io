@@ -1,7 +1,7 @@
 let ModeStatus = "dark", HtmlElement = document.documentElement, AccentColorDark = "cyan", AccentColorLight = "red"
 
 function toggleDarkLightMode() {
-    
+
     spanGradientObj = document.querySelector(".gradient-span")
     switch (ModeStatus) {
         case "dark":
@@ -27,10 +27,6 @@ function toggleDarkLightMode() {
         default:
             break
     }
-}
-
-function openProjects(){
-    window.location.href = "./projects.html"
 }
 
 function darkModeFunction() {
@@ -82,7 +78,6 @@ function darkModeFunction() {
             break
     }
 }
-
 
 // age calculator 1073530800
 document.addEventListener("DOMContentLoaded", function () {
