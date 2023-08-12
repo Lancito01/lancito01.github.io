@@ -24,6 +24,10 @@ html {
     width: 75vw;
 }
 
+img {
+    max-width: 90vw;
+}
+
 nav {
     box-sizing: border-box;
     position: sticky;
