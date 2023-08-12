@@ -3,16 +3,17 @@
     width: 85vw;
 }
 
-.stand-section h3 { /* center "stand" title vertically */
+.stand-section h3 {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
+}
+
+.stand-section * {
+    padding-right: 10px
 }
 
 .stand-section img {
     max-width: 27.5px;
-    padding-right: 10px;
+    padding-left: 4.5px;
 }
 
 .programming-languages {
