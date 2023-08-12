@@ -70,6 +70,8 @@ h3 {
 
 p, li {
     font-size: 15px;
+    text-align: justify;
+    max-width: 90vw;
 }
 
 
