@@ -12,7 +12,7 @@ html {
 }
 
 .space-on-top {
-    padding-top: 2.5vh;
+    padding-top: 2vh;
 }
 
 .gradient {
@@ -28,18 +28,40 @@ nav {
     top: 0;
     z-index: 1;
     background-color: rgb(20, 20, 20);
-    
+
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    
+
     /*? initial values */
     border-bottom: 1px solid cyan;
 }
 
+.nav-links {
+    max-width: 50vw;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around
+}
+
+.nav-links ul {
+    margin: 0;
+    padding: 1.5vw;
+    font-size: 21.25px;
+}
+
+.nav-links ul a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
 .margin {
     margin-left: 2vw;
+}
+
+.big-margin {
+    margin-left: 4vw;
 }
 
 a {
@@ -68,7 +90,8 @@ h3 {
     font-size: 20px;
 }
 
-p, li {
+p,
+li {
     font-size: 15px;
     text-align: justify;
     max-width: 90vw;
@@ -76,17 +99,20 @@ p, li {
 
 
 /*!! Others !!*/
-.socials div { /* vertically center socials section */
+.socials div {
+    /* vertically center socials section */
     display: inherit;
     /* (flex) */
     align-items: center;
 }
 
-.socials a { /* separate images from their description */
+.socials a {
+    /* separate images from their description */
     padding: 10px;
 }
 
-.socials { /* make socials horizontal instead of vertical */
+.socials {
+    /* make socials horizontal instead of vertical */
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
@@ -105,4 +131,10 @@ p, li {
 .github-logo {
     max-height: 30px;
     width: auto
+}
+
+@media screen and (max-width: 1200px) {
+    .nav-links {
+        display: none;
+    }
 }
