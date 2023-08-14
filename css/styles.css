@@ -22,10 +22,13 @@ html {
     background-clip: text;
 }
 
-nav {
-    box-sizing: border-box;
+header {
     position: sticky;
     top: 0;
+}
+
+nav {
+    box-sizing: border-box;
     z-index: 1;
     background-color: rgb(20, 20, 20);
 
@@ -35,6 +38,12 @@ nav {
 
     /*? initial values */
     border-bottom: 1px solid cyan;
+
+    height: 80px;
+}
+
+.title{
+    margin: 0;
 }
 
 .nav-links {
