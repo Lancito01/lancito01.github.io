@@ -39,7 +39,7 @@ nav {
     /*? initial values */
     border-bottom: 1px solid cyan;
 
-    height: 80px;
+    height: 70px;
 }
 
 .title{
@@ -47,17 +47,18 @@ nav {
 }
 
 .nav-links {
-    max-width: 50vw;
     display: flex;
     flex-wrap: nowrap;
+
     align-items: center;
-    justify-content: space-around
+
+    white-space: nowrap;
 }
 
 .nav-links ul {
     margin: 0;
     padding: 1.5vw;
-    font-size: 21.25px;
+    font-size: 20px;
 }
 
 .nav-links ul a {
@@ -142,7 +143,7 @@ li {
     width: auto
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 864px) {
     .nav-links {
         display: none;
     }
