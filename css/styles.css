@@ -110,36 +110,36 @@ li {
 
 
 /*!! Others !!*/
-.socials div {
+#socials div {
     /* vertically center socials section */
     display: inherit;
     /* (flex) */
     align-items: center;
 }
 
-.socials a {
+#socials a {
     /* separate images from their description */
     padding: 10px;
 }
 
-.socials {
+#socials {
     /* make socials horizontal instead of vertical */
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
 }
 
-.discord-logo {
+#discord-logo {
     max-height: 20px;
     width: auto
 }
 
-.twitter-logo {
+#twitter-logo {
     max-height: 20px;
     width: auto
 }
 
-.github-logo {
+#github-logo {
     max-height: 30px;
     width: auto
 }

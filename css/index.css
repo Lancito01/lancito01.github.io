@@ -1,0 +1,11 @@
+#quote {
+    font-style: italic;
+    
+    margin-top: 80px;
+    /* max-width: 60vw; */
+
+    /* text-align-last: center; */
+    line-height: 4vh;
+
+    /* position: relative */
+}

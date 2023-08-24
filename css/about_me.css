@@ -1,32 +1,32 @@
-.bio {
+#bio {
     /* text-align: justify; */
     width: 85vw;
 }
 
-.stand-section h3 {
+#stand-section h3 {
     display: flex;
 }
 
-.stand-section * {
+#stand-section * {
     padding-right: 10px
 }
 
-.stand-section img {
+#stand-section img {
     max-width: 27.5px;
     padding-left: 4.5px;
 }
 
-.programming-languages {
+#programming-languages {
     display: flex;
     flex-wrap: wrap;
 }
 
-.github-projects {
+#github-projects {
     display: flex;
     flex-wrap: wrap;
 }
 
-.poem {
+#poem {
     margin-top: 80px;
     font-style: italic;
     text-align-last: center;
