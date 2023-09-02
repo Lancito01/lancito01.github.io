@@ -26,6 +26,10 @@
     flex-wrap: wrap;
 }
 
+#programming-languages p, #github-projects p {
+    margin-right: 2.5vw;
+}
+
 #poem {
     margin-top: 80px;
     font-style: italic;
