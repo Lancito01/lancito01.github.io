@@ -1,3 +1,27 @@
 img {
     max-width: 90vw;
 }
+
+#ai-generated-images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-example {
+    padding-left: 1vw;
+    display: inline-block;
+    position: relative;
+    width: fit-content;
+}
+
+.image-example img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+}
+
+.image-prompt {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+}
